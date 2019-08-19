@@ -10,6 +10,6 @@ Capybara.default_driver = :chrome
 
 Capybara.app_host = 'https://login.wheniwork.com'
 
-After do |scenario|
+After do
   Capybara.current_session.driver.quit
 end
